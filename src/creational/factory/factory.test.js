@@ -1,7 +1,7 @@
 const {BrazilianFactory, AmericanFactory} = require('./factory')
 
-describe('Create a person from factory', () => {
-  test('It should modify the person public attributes and call the toString function', () => {
+describe('Factory Test', () => {
+  test('It should create 2 persons and validate the toString method', () => {
     const personA = BrazilianFactory.create('luan')
     expect(personA.toString()).toBe('luan silva lives in brazil')
     expect(personA.lastName).toBe('silva')

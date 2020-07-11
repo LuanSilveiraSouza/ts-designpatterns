@@ -12,7 +12,7 @@ class Person {
 
 class PersonFactory {
   static create() {
-    return new Person();
+    return new Person()
   }
 }
 
@@ -28,5 +28,5 @@ class AmericanFactory extends PersonFactory{
   }
 }
 
-module.exports.BrazilianFactory = BrazilianFactory;
-module.exports.AmericanFactory = AmericanFactory;
+module.exports.BrazilianFactory = BrazilianFactory
+module.exports.AmericanFactory = AmericanFactory
