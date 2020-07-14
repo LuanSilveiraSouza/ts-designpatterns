@@ -28,7 +28,6 @@ Make the class of the single instance responsible for access and "initialization
 - Control in how and when clients access the instance
 - More flexibility than static methods because it allows polymorphism
 - With just an internal implementation of the singleton you can make the singleton create a controlled number of instances
-- 
 
 #### Cons
 - A static and specific implementation like singleton results in great coupling
