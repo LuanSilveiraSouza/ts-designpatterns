@@ -1,7 +1,7 @@
-# **Observer**
+<h1 align='center'>Observer</h1>
 
 <p align='center'>
-	<img src='./.github/observer.png' alt='Observer' width='200'>
+	<img src='./.github/observer.png' alt='Observer'>
 </p>
 
 ## Problem
