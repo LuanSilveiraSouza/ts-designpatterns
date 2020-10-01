@@ -1,7 +1,7 @@
 <h1 align='center'>Singleton</h1>
 
 <p align='center'>
-	<img src='./.github/singleton.png' alt='Singleton'>
+	<img src='../../../.github/singleton.png' alt='Singleton'>
 </p>
 
 ## Problem

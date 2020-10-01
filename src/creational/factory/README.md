@@ -1,7 +1,7 @@
 <h1 align='center'>Factory</h1>
 
 <p align='center'>
-	<img src='./.github/factory.png' alt='Factory'>
+	<img src='../../../.github/factory.png' alt='Factory'>
 </p>
 
 ## Problem
