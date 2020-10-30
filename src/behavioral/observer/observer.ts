@@ -1,16 +1,19 @@
-class JobList {
+export class JobList {
+	private subscribers: JobSeeker[];
+	jobs: string[];
+
 	constructor() {
 		this.subscribers = [];
 		this.jobs = [];
 	}
 
-	register(jobSeeker) {
+	register(jobSeeker: JobSeeker) {
 		this.subscribers.push(jobSeeker);
 	}
 
-	unregister(jobSeeker) {
+	unregister(name: string) {
 		this.subscribers = this.subscribers.filter(
-			(item) => !(item instanceof jobSeeker)
+			(item) => !(item.name === name)
 		);
 	}
 
@@ -18,22 +21,22 @@ class JobList {
 		return this.subscribers.map((item) => item.update(this));
 	}
 
-	addJob(jobPost) {
+	addJob(jobPost: string) {
 		this.jobs.push(jobPost);
 		this.notify();
 	}
 }
 
-class JobSeeker {
+export class JobSeeker {
+	name: string;
+
 	constructor(name = '') {
 		this.name = name;
 	}
 
-	update(jobList) {
+	update(jobList: JobList) {
 		return `${this.name} is notified that the joblist has a new job: ${
 			jobList.jobs[jobList.jobs.length - 1]
 		}`;
 	}
 }
-
-module.exports = { JobList, JobSeeker };

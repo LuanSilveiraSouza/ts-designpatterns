@@ -1,4 +1,4 @@
-const Cell = require('./prototype');
+import Cell from './prototype';
 
 describe('Prototype test', () => {
 	test('It should create a object and clones it, and both have to be the same', () => {

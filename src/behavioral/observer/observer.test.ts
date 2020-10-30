@@ -1,4 +1,4 @@
-const { JobList, JobSeeker } = require('./observer');
+import { JobList, JobSeeker } from './observer';
 
 describe('Observer Test', () => {
 	test('It should create a observer, subscribe itens and notify them when a job is posted', () => {
@@ -16,9 +16,9 @@ describe('Observer Test', () => {
 
 		joblist.addJob('Software Developer');
 
-		expect(joblist.notify()).toEqual(
-			['John is notified that the joblist has a new job: Software Developer',
-			'Mary is notified that the joblist has a new job: Software Developer']
-		);
+		expect(joblist.notify()).toEqual([
+			'John is notified that the joblist has a new job: Software Developer',
+			'Mary is notified that the joblist has a new job: Software Developer',
+		]);
 	});
 });
