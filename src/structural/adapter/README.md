@@ -1,4 +1,4 @@
-<h1 align='center'>Builder</h1>
+<h1 align='center'>Adapter</h1>
 
 <p align='center'>
 	<img src='../../../.github/adapter.png' alt='Adapter'>
