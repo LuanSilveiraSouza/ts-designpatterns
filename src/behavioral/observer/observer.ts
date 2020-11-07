@@ -1,5 +1,5 @@
 export class JobList {
-	private subscribers: JobSeeker[];
+	subscribers: JobSeeker[];
 	jobs: string[];
 
 	constructor() {
